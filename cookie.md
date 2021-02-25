@@ -17,3 +17,7 @@ https://github.com/mqyqingfeng/Blog/issues/157
 ## secure
 
 cookie 的 secure 为true时 发起的请求为 https 才会携带 cookie
+
+## 浏览器展示 cookie
+
+当我们打开一个网站时我们会发现非当前打开网站的域名cookie也能查看到，这是浏览器的默认机制，只能看不能操作，同时按照 cookie 设置的属性不同也会影响它的展示逻辑，如果再 a.com 下写了一个 secure=true 的 cookie，在 b.a.com 下打开可能看不见，原因是取决于你的  b.a.com 是 http 还是 https
