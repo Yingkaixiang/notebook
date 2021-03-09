@@ -52,4 +52,4 @@ const lessModuleRegex = /\.module\.less$/;
 
 ## alias
 
-cra 默认会去查找 tsconfig 文件，然后自动生成 webpack 的 alias，但是只写死了 src，而不是根据 tsconfig 里的 path 进行动态配置。主要代码再 config.js/modules.js 中。
+cra 默认会去查找 tsconfig 文件，然后自动生成 webpack 的 alias，但是只写死了 src，而不是根据 tsconfig 里的 path 进行动态配置。主要代码再 config.js/modules.js 中。可以自动解析tsconfig.json 然后配置webpack.config.js 的alias
