@@ -1,0 +1,6 @@
+# create-react-app
+
+## 修改本地启动的ip或域名
+
+package.json
+start: "HOST=local.test.com node script/start.js"
