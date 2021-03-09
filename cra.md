@@ -19,6 +19,11 @@ npm i less less-loader -D
 webpack.config.js 的 sass-loader 下添加以下代码
 
 ```js
+// sass 正则下
+const lessRegex = /\.less$/;
+const lessModuleRegex = /\.module\.less$/;
+
+// sass-loader 后
 {
   test: lessRegex,
   exclude: lessModuleRegex,
